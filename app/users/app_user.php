@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class app_user extends User
 {
     //parents and child relations
-    public function userprofile( )
+    public function userprofile()
     {
         return $this -> hasOne(user_profile::class);
     }

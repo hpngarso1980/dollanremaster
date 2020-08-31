@@ -23,11 +23,11 @@ class access_priviledge extends Model
     ];
 
     //child parent relations
-    public function dataaccess( )
+    public function dataaccess()
     {
         return $this -> belongsTo(data_access::class);
     }
-    public function cmsuser( )
+    public function cmsuser()
     {
         return $this -> belongsTo(cms_user::class);
     }

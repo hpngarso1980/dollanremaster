@@ -28,17 +28,17 @@ class operator extends Model
     ];
 
     //child parent relations
-    public function company( )
+    public function company()
     {
         return $this -> belongsTo(company::class);
     }
-    public function cmsuser( )
+    public function cmsuser()
     {
         return $this -> belongsTo(cms_user::class);
     }
 
     //parent child relations
-    public function adminuser( )
+    public function adminuser()
     {
         return $this -> hasMany(admin_user::class);
     }

@@ -25,7 +25,7 @@ class user_profile extends Model
     ];
 
     //child parent relation (1 user have only 1 profile)
-    public function appuser( )
+    public function appuser()
     {
         return $this -> belongsTo(app_user::class);
     }

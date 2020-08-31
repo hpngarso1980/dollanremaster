@@ -19,17 +19,17 @@ class data_access extends Model
     ];
 
     //child parent relations
-    public function cmsuser( )
+    public function cmsuser()
     {
         return $this -> belongsTo(cms_user::class);
     }
 
     //parent child relations
-    public function accesspreviledges( )
+    public function accesspreviledges()
     {
         return $this -> hasMany(access_priviledge::class);
     }
-    public function adminuser( )
+    public function adminuser()
     {
         return $this -> hasMany(admin_user::class);
     }

@@ -18,15 +18,15 @@ class region extends Model
         'cmsuser_id',
     ];
 
-    public function province( )
+    public function province()
     {
         return $this -> belongsTo(province::class);
     }
-    public function cmsuser( )
+    public function cmsuser()
     {
         return $this ->belongsTo(cms_user::class);
     }
-    public function companies( )
+    public function companies()
     {
         return $this->hasMany(company::class);
     }

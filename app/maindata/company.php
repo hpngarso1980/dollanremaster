@@ -22,17 +22,17 @@ class company extends Model
     ];
 
     //child to parent relation
-    public function region( )
+    public function region()
     {
         return $this -> belongsTo(region::class);
     }
-    public function cmsuser( )
+    public function cmsuser()
     {
         return $this -> belongsTo(cms_user::class);
     }
 
     //parent to child relation
-    public function operators( )
+    public function operators()
     {
         return $this -> hasMany(operator::class);
     }

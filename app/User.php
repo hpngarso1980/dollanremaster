@@ -19,6 +19,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email', //nullable
+        'socialite_id', //nullable
         'mobile', //nullable
         'password', //nullable
     ];
@@ -39,7 +40,6 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'social' => 'array',
     ];
 
     //making email always lowercase

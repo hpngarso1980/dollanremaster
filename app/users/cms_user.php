@@ -14,33 +14,33 @@ use Illuminate\Database\Eloquent\Model;
 class cms_user extends User
 {
     //parent child with one relation
-    public function adminuser( )
+    public function adminuser()
     {
         return $this -> hasOne(admin_user::class);
     }
 
     //parent to child relations
-    public function provinces( )
+    public function provinces()
     {
         return $this -> hasMany(province::class);
     }
-    public function regions( )
+    public function regions()
     {
         return $this -> hasMany(region::class);
     }
-    public function companies( )
+    public function companies()
     {
         return $this->hasMany(company::class);
     }
-    public function operators( )
+    public function operators()
     {
         return $this -> hasMany(operator::class);
     }
-    public function dataaccess( )
+    public function dataaccess()
     {
         return $this -> hasMany(data_access::class);
     }
-    public function accesspreviledges( )
+    public function accesspreviledges()
     {
         return $this -> hasMany(access_priviledge::class);
     }

@@ -17,11 +17,11 @@ class province extends Model
         'cmsuser_id'
     ];
 
-    public function cmsuser( )
+    public function cmsuser()
     {
         return $this -> belongsTo(cms_user::class);
     }
-    public function regions( )
+    public function regions()
     {
         return $this -> hasMany(region::class);
     }
